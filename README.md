@@ -1,7 +1,7 @@
 # rest-api-screenplay
 Consuming rest api with screenplay pattern.
 
-# compile with: 
+### compile with: 
   gradlew.bat clean build -x test
-# run test: 
+### run test: 
   gradlew.bat clean test 
