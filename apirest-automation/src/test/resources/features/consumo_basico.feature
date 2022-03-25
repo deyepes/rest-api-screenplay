@@ -7,5 +7,5 @@ Feature: Consumir una API Rest
   Scenario: Creacion exitosa de un empleado
 
     Given que quiero crear un empleado
-    When lo creo con el nombre "test" salario "123" edad "30"
+    When lo creo con el nombre "Empleado" salario "1234" edad "30"
     Then deberia responder con un estado "success"

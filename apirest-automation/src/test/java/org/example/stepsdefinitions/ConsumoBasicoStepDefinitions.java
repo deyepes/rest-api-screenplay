@@ -41,7 +41,7 @@ public class ConsumoBasicoStepDefinitions {
 
     @Then("deberia responder con un estado {string}")
     public void deberiaResponderConUnEstado(String status) {
-        seeThat(Response.receivedIn("status"), is(status)).orComplainWith(ResponseCodeIncorrect.class, "The Response Code is not correct ");
+        theActorInTheSpotlight().should(seeThat(Response.receivedIn("status"), is(status)).orComplainWith(ResponseCodeIncorrect.class, "The Response Code is not correct "));
     }
 
 }
